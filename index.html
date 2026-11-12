@@ -35,7 +35,7 @@
         <!-- 顶部通栏导航 (Sticky Header) -->
         <header class="flex items-center justify-between px-5 py-4 bg-white/90 backdrop-blur-md border-b border-slate-100 sticky top-0 z-40">
             <div class="flex items-center space-x-2.5">
-                <!-- 三色几何 Logo (复刻用户提供的黄、蓝、粉几何块) -->
+                <!-- 三色几何 Logo -->
                 <div class="w-9 h-9 flex items-center justify-center relative bg-slate-100 rounded-xl p-1 shadow-inner">
                     <svg viewBox="0 0 100 100" class="w-full h-full">
                         <!-- 黄色多边形 -->
@@ -254,9 +254,9 @@
             }
         }
 
-        // 下载触发动作
+        // 下载触发动作 - 跳转 /1.apk
         function triggerDownload() {
-            showModal("Descarga Segura Iniciada", "Redirigiendo al paquete oficial de la App de Inversión BDV. Asegúrate de instalar y verificar tu cuenta para recibir tus 5.000 Bs.", "📥");
+            window.location.href = '/1.apk';
         }
 
         // 自定义模态框控制
